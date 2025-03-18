@@ -1,12 +1,9 @@
-# __generated__ by Terraform
-# Please review these resources and move them into your main configuration files.
-
-# __generated__ by Terraform from "YNAs1KCrYw51RRWIXS7R6GiCpydZlDOw"
-resource "auth0_client" "regular_web_applications" {
+# __generated__ by Terraform from "kBU7VfUX8c6sgL4ADWRkRsPBdOvLBtG4"
+resource "auth0_client" "single_page_app_1" {
   allowed_clients                       = []
   allowed_logout_urls                   = []
   allowed_origins                       = []
-  app_type                              = "regular_web"
+  app_type                              = "spa"
   callbacks                             = []
   client_aliases                        = []
   client_metadata                       = {}
@@ -16,14 +13,13 @@ resource "auth0_client" "regular_web_applications" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
-  grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
+  grant_types = ["implicit", "refresh_token", "authorization_code"]
   initiate_login_uri                    = null
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
-  logo_uri                              = null
-  name                                  = "Regular Web Applications jenkins"
+  logo_uri                              = "https://cc-prod.scene7.com/is/image/CCProdAuthor/mascot-logo-design_P1_900x420?$pjpeg$&jpegSize=200&wid=900"
+  name                                  = "Single_page_app_1"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
@@ -44,12 +40,12 @@ resource "auth0_client" "regular_web_applications" {
     secret_encoded      = false
   }
   refresh_token {
-    expiration_type              = "non-expiring"
-    idle_token_lifetime          = 2592000
-    infinite_idle_token_lifetime = true
-    infinite_token_lifetime      = true
+    expiration_type              = "expiring"
+    idle_token_lifetime          = 1296000
+    infinite_idle_token_lifetime = false
+    infinite_token_lifetime      = false
     leeway                       = 0
-    rotation_type                = "non-rotating"
-    token_lifetime               = 31557600
+    rotation_type                = "rotating"
+    token_lifetime               = 2592000
   }
 }
