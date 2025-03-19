@@ -22,7 +22,7 @@ resource "auth0_client" "regular_web_applications" {
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular Web Applications For Qa"
+  name                                  = "Regular Web Applications For QA"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
