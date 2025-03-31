@@ -1,8 +1,8 @@
 # __generated__ by Terraform
 # Please review these resources and move them into your main configuration files.
 
-# __generated__ by Terraform from "YNAs1KCrYw51RRWIXS7R6GiCpydZlDOw"
-resource "auth0_client" "regular_web_applications" {
+# __generated__ by Terraform from "S2KP8SdH2KpAT0hlVo7tANuJ3Ng3XrMR"
+resource "auth0_client" "regular_web_applications_by_jenkins" {
   allowed_clients                       = []
   allowed_logout_urls                   = []
   allowed_origins                       = []
@@ -16,13 +16,14 @@ resource "auth0_client" "regular_web_applications" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
+  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
   initiate_login_uri                    = null
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular Web Applications by Jenkins"
+  name                                  = "Regular Web Applications by Jenkins."
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
@@ -41,6 +42,13 @@ resource "auth0_client" "regular_web_applications" {
     lifetime_in_seconds = 36000
     scopes              = {}
     secret_encoded      = false
+  }
+  oidc_logout {
+    backchannel_logout_urls = []
+    backchannel_logout_initiators {
+      mode                = "custom"
+      selected_initiators = ["idp-logout", "rp-logout"]
+    }
   }
   refresh_token {
     expiration_type              = "non-expiring"
