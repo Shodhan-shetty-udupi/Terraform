@@ -16,14 +16,13 @@ resource "auth0_client" "regular_web_applications_by_jenkins" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
   initiate_login_uri                    = null
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular Web Applications by Jenkins."
+  name                                  = "Regular Web app."
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
