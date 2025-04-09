@@ -6,7 +6,7 @@ resource "auth0_client" "regular_web_applications_by_jenkins" {
   allowed_clients                       = []
   allowed_logout_urls                   = []
   allowed_origins                       = []
-  app_type                              = "regular_web"
+  app_type                              = "regular_web."
   callbacks                             = []
   client_aliases                        = []
   client_metadata                       = {}
