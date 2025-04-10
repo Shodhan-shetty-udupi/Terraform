@@ -7,7 +7,7 @@ resource "auth0_client" "regular_app" {
   allowed_logout_urls                   = []
   allowed_origins                       = []
   app_type                              = "regular_web"
-  callbacks                             = ["http://localhost:4000"]
+  callbacks                             = ["http://localhost:3000"]
   client_aliases                        = []
   client_metadata                       = {}
   compliance_level                      = null
@@ -16,6 +16,7 @@ resource "auth0_client" "regular_app" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
+  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
   initiate_login_uri                    = null
