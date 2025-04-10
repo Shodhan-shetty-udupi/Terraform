@@ -16,7 +16,6 @@ resource "auth0_client" "regular_app" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
   initiate_login_uri                    = null
@@ -36,12 +35,6 @@ resource "auth0_client" "regular_app" {
     disable         = true
     flows           = []
     organization_id = null
-  }
-  jwt_configuration {
-    alg                 = "RS256"
-    lifetime_in_seconds = 36000
-    scopes              = {}
-    secret_encoded      = false
   }
 
   refresh_token {
