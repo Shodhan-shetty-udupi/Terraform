@@ -22,7 +22,7 @@ resource "auth0_client" "regular_app" {
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular App"
+  name                                  = "Regular App via terraform"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
@@ -42,17 +42,7 @@ resource "auth0_client" "regular_app" {
     scopes              = {}
     secret_encoded      = false
   }
-  native_social_login {
-    apple {
-      enabled = false
-    }
-    facebook {
-      enabled = false
-    }
-    google {
-      enabled = false
-    }
-  }
+
   refresh_token {
     expiration_type              = "non-expiring"
     idle_token_lifetime          = 2592000
