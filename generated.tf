@@ -7,7 +7,7 @@ resource "auth0_client" "regular_app" {
   allowed_logout_urls                   = []
   allowed_origins                       = []
   app_type                              = "regular_web"
-  callbacks                             = ["http://localhost:3000"]
+  callbacks                             = ["http://localhost:4000"]
   client_aliases                        = []
   client_metadata                       = {}
   compliance_level                      = null
@@ -22,7 +22,7 @@ resource "auth0_client" "regular_app" {
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular App by jenkins 1"
+  name                                  = "Regular App"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
