@@ -22,7 +22,7 @@ resource "auth0_client" "regular_app" {
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Regular App by jenkins 1"
+  name                                  = "Regular App by jenkins 2"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
