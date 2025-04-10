@@ -7,7 +7,7 @@ resource "auth0_client" "regular_app" {
   allowed_logout_urls                   = []
   allowed_origins                       = []
   app_type                              = "regular_web"
-  callbacks                             = ["http://localhost:3000"]
+  callbacks                             = ["http://localhost:4000"]
   client_aliases                        = []
   client_metadata                       = {}
   compliance_level                      = null
