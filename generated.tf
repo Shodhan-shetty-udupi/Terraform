@@ -1,18 +1,11 @@
-# __generated__ by Terraform
-# Please review these resources and move them into your main configuration files.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-# __generated__ by Terraform from "con_RWM3q0YxRApPlFgB"
-resource "auth0_connection" "username_password_authentication" {
-=======
+
 # __generated__ by Terraform from "con_UL9N3GgUWI5MRGa2"
 resource "auth0_connection" "testdb" {
->>>>>>> origin/Dev_branch
   display_name         = null
   is_domain_connection = false
   metadata             = {}
-  name                 = "testDb"
+  name                 = "testDbb"
   realms               = ["testDb"]
   show_as_button       = null
   strategy             = "auth0"
@@ -129,7 +122,6 @@ resource "auth0_connection" "testdb" {
       local_enrollment_enabled       = true
       progressive_enrollment_enabled = true
     }
-<<<<<<< HEAD
     password_complexity_options {
       min_length = 8
     }
@@ -144,53 +136,5 @@ resource "auth0_connection" "testdb" {
     password_no_personal_info {
       enable = false
     }
-=======
-# __generated__ by Terraform from "Ra2yoYu8Q60EzrimIe2g8G5CNHqeq4wh"
-resource "auth0_client" "regular_app" {
-  allowed_clients                       = []
-  allowed_logout_urls                   = []
-  allowed_origins                       = []
-  app_type                              = "regular_web"
-  callbacks                             = ["http://localhost:4000"]
-  client_aliases                        = []
-  client_metadata                       = {}
-  compliance_level                      = null
-  cross_origin_auth                     = false
-  cross_origin_loc                      = null
-  custom_login_page                     = null
-  custom_login_page_on                  = true
-  description                           = null
-  form_template                         = null
-  grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
-  initiate_login_uri                    = null
-  is_first_party                        = true
-  is_token_endpoint_ip_header_trusted   = false
-  logo_uri                              = null
-  name                                  = "Regular App via terraform"
-  oidc_conformant                       = true
-  organization_require_behavior         = null
-  organization_usage                    = null
-  require_proof_of_possession           = false
-  require_pushed_authorization_requests = false
-  sso                                   = false
-  sso_disabled                          = false
-  web_origins                           = []
-  default_organization {
-    disable         = true
-    flows           = []
-    organization_id = null
-  }
-
-  refresh_token {
-    expiration_type              = "non-expiring"
-    idle_token_lifetime          = 2592000
-    infinite_idle_token_lifetime = true
-    infinite_token_lifetime      = true
-    leeway                       = 0
-    rotation_type                = "non-rotating"
-    token_lifetime               = 31557600
->>>>>>> d0cb255be4a861b2d814e0922711cf63718df972
-=======
->>>>>>> origin/Dev_branch
   }
 }
