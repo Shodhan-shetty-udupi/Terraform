@@ -60,7 +60,6 @@ resource "auth0_connection" "testdb" {
     password_policy                        = "good"
     ping_federate_base_url                 = null
     pkce_enabled                           = false
-    precedence                             = []
     protocol_binding                       = null
     provider                               = null
     request_template                       = null
