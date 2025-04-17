@@ -13,7 +13,6 @@ resource "auth0_client" "single_page_app_1" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["implicit", "refresh_token", "password", "http://auth0.com/oauth/grant-type/password-realm", "http://auth0.com/oauth/grant-type/mfa-oob", "http://auth0.com/oauth/grant-type/mfa-otp", "http://auth0.com/oauth/grant-type/mfa-recovery-code"]
   initiate_login_uri                    = null
@@ -34,37 +33,6 @@ resource "auth0_client" "single_page_app_1" {
     flows           = []
     organization_id = null
   }
-  jwt_configuration {
-    alg                 = "RS256"
-    lifetime_in_seconds = 36000
-    scopes              = {}
-    secret_encoded      = false
-  }
-  native_social_login {
-    apple {
-      enabled = false
-    }
-    facebook {
-      enabled = false
-    }
-    google {
-      enabled = false
-    }
-  }
-  refresh_token {
-    expiration_type              = "expiring"
-    idle_token_lifetime          = 1296000
-    infinite_idle_token_lifetime = false
-    infinite_token_lifetime      = false
-    leeway                       = 0
-    rotation_type                = "rotating"
-    token_lifetime               = 2592000
-  }
+
 }
 
-# __generated__ by Terraform from "mfa-otp::en"
-resource "auth0_prompt_custom_text" "en_mfa_otp" {
-  body     = jsonencode({})
-  language = "en"
-  prompt   = "mfa-otp"
-}
