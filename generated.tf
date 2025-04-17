@@ -13,7 +13,6 @@ resource "auth0_client" "single_page_app_1" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["implicit", "refresh_token", "password", "http://auth0.com/oauth/grant-type/password-realm", "http://auth0.com/oauth/grant-type/mfa-oob", "http://auth0.com/oauth/grant-type/mfa-otp", "http://auth0.com/oauth/grant-type/mfa-recovery-code"]
   initiate_login_uri                    = null
