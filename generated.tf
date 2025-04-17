@@ -61,3 +61,10 @@ resource "auth0_client" "single_page_app_1" {
     token_lifetime               = 2592000
   }
 }
+
+# __generated__ by Terraform from "mfa-otp::en"
+resource "auth0_prompt_custom_text" "en_mfa_otp" {
+  body     = jsonencode({})
+  language = "en"
+  prompt   = "mfa-otp"
+}
