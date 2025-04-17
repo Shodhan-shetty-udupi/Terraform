@@ -4,7 +4,7 @@ resource "auth0_client" "single_page_app_1" {
   allowed_logout_urls                   = []
   allowed_origins                       = []
   app_type                              = "spa"
-  callbacks                             = []
+  callbacks                             = var.callbacks
   client_aliases                        = []
   client_metadata                       = {}
   compliance_level                      = null
