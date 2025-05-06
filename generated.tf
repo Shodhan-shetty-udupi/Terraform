@@ -13,7 +13,6 @@ resource "auth0_client" "regular_app" {
   custom_login_page                     = null
   custom_login_page_on                  = true
   description                           = null
-  encryption_key                        = {}
   form_template                         = null
   grant_types                           = ["authorization_code", "implicit", "refresh_token", "client_credentials"]
   initiate_login_uri                    = null
