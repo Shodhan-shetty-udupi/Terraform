@@ -3,7 +3,7 @@
 variable "callbacks" {
     description = "Redirect Uri"
     type    = list(string)
-    default = ["http://localhost:3000"]
+    default = ["http://localhost:3001"]
     
 }
 
