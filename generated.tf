@@ -6,7 +6,7 @@ resource "auth0_connection" "testdb" {
   display_name         = null
   is_domain_connection = false
   metadata             = {}
-  name                 = "testDb_terraform"
+  name                 = "testDbTerraform"
   realms               = ["testDb"]
   show_as_button       = null
   strategy             = "auth0"
@@ -60,7 +60,6 @@ resource "auth0_connection" "testdb" {
     password_policy                        = "good"
     ping_federate_base_url                 = null
     pkce_enabled                           = false
-    precedence                             = []
     protocol_binding                       = null
     provider                               = null
     request_template                       = null
