@@ -22,7 +22,7 @@ resource "auth0_client" "default_app" {
   is_first_party                        = true
   is_token_endpoint_ip_header_trusted   = false
   logo_uri                              = null
-  name                                  = "Default App by terraform"
+  name                                  = "Default App by terraform jenkins"
   oidc_conformant                       = true
   organization_require_behavior         = null
   organization_usage                    = null
