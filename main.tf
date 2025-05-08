@@ -9,5 +9,5 @@ terraform {
 
 
 provider "auth0" {
-  
+    
 }
